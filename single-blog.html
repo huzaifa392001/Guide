@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Neuton&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <a id="button"><i class="fas fa-chevron-up"></i></a>
+    <header>
+        <!-- Image and text -->
+        <nav class="navbar navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand ml-0 mr-auto show-menu" href="index.html" data-id="home">
+                    <!-- <img src="assets/images/logo.png" height="90px" class="d-inline-block align-top" alt=""> -->
+                    <h2><i class="mr-2 fas fa-book-open"></i>Guide.Com</h2>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-0 ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link show-menu" href="./index.html#guide" data-id="guide">Guide</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link show-menu" href="./index.html#about" data-id="about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link show-menu" href="./index.html#why-us" data-id="why-us">Why Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./index.html#blog" class="nav-link show-menu" data-id="blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link show-menu" href="./index.html#library" data-id="library">Library</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link show-menu" href="./index.html#contact" data-id="contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="single-blog-section" id="single-blog">
+        <div class="blog-image">
+            <img class="w-100" src="assets/images/carousel-img-1.jpg" alt="">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-10">
+                    <div class="blog-text mt-5">
+                        <h1 class="single-blog-heading"></h1>
+                        <p class="text-justify single-blog-text">
+
+                        </p>
+                    </div>
+                    <div class="comment-section">
+                        <div class="comments">
+                            <h1>3 Comments</h1>
+                            <!-- <div class="single-comment w-100 mb-4">
+                                <div class="d-flex user-name">
+                                    <i class="fas fa-user-circle fa-3x mr-3"></i>
+                                    <p class="mr-1 name">Talha Khalid</p>
+                                    <p>Says :</p>
+                                </div>
+                                <div class="comment-date">
+                                    <p>Feb 23, 2021 at 5:53pm</p>
+                                </div>
+                                <div class="comment">
+                                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nihil voluptatibus totam a, iure laboriosam quod accusantium tempore officia voluptate fuga libero quis iste nisi perferendis eligendi quaerat quos ipsa fugiat alias sapiente, ea at voluptas! Quis voluptatum fuga expedita voluptate fugiat consequuntur doloribus omnis maiores, earum cupiditate a doloremque, porro natus eaque sapiente inventore rerum sunt tenetur numquam harum similique sequi! Vitae saepe illum ipsam, ea quibusdam iusto voluptate eos ad at dolor ex cum et dolores molestiae aperiam natus. At dignissimos aliquam mollitia voluptatum et voluptate assumenda, facere nemo dolorem. Saepe modi a sit in mollitia, esse recusandae?</p>
+                                </div>
+                                <div class="reply">
+                                    <button class="btn reply-btn">Reply</button>
+                                    <div class="underline"></div>
+                                </div>
+                            </div>
+                            <div class="single-comment w-100 mb-4">
+                                <div class="d-flex user-name">
+                                    <i class="fas fa-user-circle fa-3x mr-3"></i>
+                                    <p class="mr-1 name">Syed Faiz</p>
+                                    <p>Says :</p>
+                                </div>
+                                <div class="comment-date">
+                                    <p>Feb 23, 2021 at 5:53pm</p>
+                                </div>
+                                <div class="comment">
+                                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nihil voluptatibus totam a, iure laboriosam quod accusantium tempore officia voluptate fuga libero quis iste nisi perferendis eligendi quaerat quos ipsa fugiat alias sapiente, ea at voluptas! Quis voluptatum fuga expedita voluptate fugiat consequuntur doloribus omnis maiores, earum cupiditate a doloremque, porro natus eaque sapiente inventore rerum sunt tenetur numquam harum similique sequi! Vitae saepe illum ipsam, ea quibusdam iusto voluptate eos ad at dolor ex cum et dolores molestiae aperiam natus. At dignissimos aliquam mollitia voluptatum et voluptate assumenda, facere nemo dolorem. Saepe modi a sit in mollitia, esse recusandae?</p>
+                                </div>
+                                <div class="reply">
+                                    <button class="btn reply-btn">Reply</button>
+                                    <div class="underline"></div>
+                                </div>
+                            </div>
+                            <div class="single-comment w-100 mb-4">
+                                <div class="d-flex user-name">
+                                    <i class="fas fa-user-circle fa-3x mr-3"></i>
+                                    <p class="mr-1 name">Syed Zaid Hashmi</p>
+                                    <p>Says :</p>
+                                </div>
+                                <div class="comment-date">
+                                    <p>Feb 23, 2021 at 5:53pm</p>
+                                </div>
+                                <div class="comment">
+                                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nihil voluptatibus totam a, iure laboriosam quod accusantium tempore officia voluptate fuga libero quis iste nisi perferendis eligendi quaerat quos ipsa fugiat alias sapiente, ea at voluptas! Quis voluptatum fuga expedita voluptate fugiat consequuntur doloribus omnis maiores, earum cupiditate a doloremque, porro natus eaque sapiente inventore rerum sunt tenetur numquam harum similique sequi! Vitae saepe illum ipsam, ea quibusdam iusto voluptate eos ad at dolor ex cum et dolores molestiae aperiam natus. At dignissimos aliquam mollitia voluptatum et voluptate assumenda, facere nemo dolorem. Saepe modi a sit in mollitia, esse recusandae?</p>
+                                </div>
+                                <div class="reply">
+                                    <button class="btn reply-btn">Reply</button>
+                                    <div class="underline"></div>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="write-comment w-100 mb-4">
+                            <h1 class="mb-0">Leave A Reply !</h1>
+                            <p>Your email address will not be published. Required feilds are marked*</p>
+                            <form action="">
+                                <p class="label mb-0">Comment*</p>
+                                <textarea class="w-100" name="" id="" rows="5"></textarea>
+                                <p class="label mb-0">Name*</p>
+                                <input type="text" class="w-100" name="" id="">
+                                <p class="label mb-0">Email*</p>
+                                <input type="email" class="w-100" name="" id="">
+                                <button class="btn btn-lg mt-3">POST COMMENT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
