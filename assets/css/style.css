@@ -80,6 +80,38 @@ body{
     animation-duration: 2s;
 }
 
+/* intro section */
+
+.intro{
+    position: relative;
+    height: 100vh;
+}
+
+#intro-img{
+    height: 100vh;
+}
+
+.intro-btn{
+    border: 1px solid #a1f5f8;
+    color: #fff;
+    background: linear-gradient(to right, #a1f5f8 ,#fff);
+    background-color: transparent;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    font-size: 24px;
+    font-weight: bold;
+    transform: translate(-50% , -5%);
+    transition: all 400ms ease;
+}
+
+.intro-btn:hover{
+    color: #333;
+    background-size: 100% 100%;
+}
+
 /* header */
 
 header nav{
