@@ -205,22 +205,24 @@ if(hash){
     $(hash).removeClass("display-hide").addClass("display-show");
     // alert(hash) 
     if(hash == '#about'){
-        $(".about-title").text(aboutJson['title'])
-        $(".about-description").text(aboutJson['description'])
-        $(".about-img").css("background-image" , "url("+aboutJson["img"]+")")
+        
     }
     else if(hash == "#guide"){
         $(".guide-heading").text(guideJson['title'])
         $(".guide-description").text(guideJson['description'])
         $(".guide-img").css("background-image" , "url("+guideJson["img"]+")")
-    }
-    else if(hash == "#why-us"){
+        $(".about-title").text(aboutJson['title'])
+        $(".about-description").text(aboutJson['description'])
+        $(".about-img").css("background-image" , "url("+aboutJson["img"]+")")
         $(".things-main-heading").text(whyUsJson['title']);
         $.each(whyUsJson['things'], function(key, value){
-            let thingsHTML = '<div class="col-lg-4"><div class="consider-card mb-5"><div class="card-body"><i class="far fa-comment fa-3x mb-4"></i><h2 class="card-title thing-title">'+ value['card-title'] +'</h2><hr><p class="card-text thing-description">'+value['card-description']+'</p></div></div></div>';
+            let thingsHTML = '<div class="col-lg-4 col-md-6"><div class="consider-card mb-5"><div class="card-body"><i class="far fa-comment fa-3x mb-4"></i><h2 class="card-title thing-title">'+ value['card-title'] +'</h2><hr><p class="card-text thing-description">'+value['card-description']+'</p></div></div></div>';
             
             $(".things-data").append(thingsHTML);
         })
+    }
+    else if(hash == "#why-us"){
+        
     }
     else if(hash == "#blog"){
         $(".blog-heading").text(blogJson['title']);
@@ -283,23 +285,25 @@ window.addEventListener('hashchange', function() {
     $(pageHash).removeClass("display-hide").addClass("display-show");
 
     if(pageHash == '#about'){
-        $(".about-title").text(aboutJson['title'])
-        $(".about-description").text(aboutJson['description'])
-        $(".about-img").css("background-image" , "url("+aboutJson["img"]+")")
+        
     }
     else if(pageHash == "#guide"){
         $(".guide-heading").text(guideJson['title'])
         $(".guide-description").text(guideJson['description'])
         $(".guide-img").css("background-image" , "url("+guideJson["img"]+")")
-    }
-    else if(pageHash == "#why-us"){
+        $(".about-title").text(aboutJson['title'])
+        $(".about-description").text(aboutJson['description'])
+        $(".about-img").css("background-image" , "url("+aboutJson["img"]+")")
         $(".things-main-heading").text(whyUsJson['title']);
         $(".things-data").html(null);
         $.each(whyUsJson['things'], function(key, value){
-            let thingsHTML = '<div class="col-lg-4"><div class="consider-card mb-5"><div class="card-body"><i class="far fa-comment fa-3x mb-4"></i><h2 class="card-title thing-title">'+ value['card-title'] +'</h2><hr><p class="card-text thing-description">'+value['card-description']+'</p></div></div></div>';
+            let thingsHTML = '<div class="col-lg-4 col-md-6"><div class="consider-card mb-5"><div class="card-body"><i class="far fa-comment fa-3x mb-4"></i><h2 class="card-title thing-title">'+ value['card-title'] +'</h2><hr><p class="card-text thing-description">'+value['card-description']+'</p></div></div></div>';
             
             $(".things-data").append(thingsHTML);
         })
+    }
+    else if(pageHash == "#why-us"){
+        
     }
     else if(pageHash == "#blog"){
         $(".blog-heading").text(blogJson['title']);
@@ -392,5 +396,17 @@ $(window).scroll(function() {
     });
 
 
-// on load img
+// navbar scroll
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "0";
+        } 
+        else {
+            document.getElementById("navbar").style.top = "-100px";
+        }
+    prevScrollpos = currentScrollPos;
+}
 

@@ -116,6 +116,7 @@ body{
 
 header nav{
     background-color: rgba(34, 34, 34, 0.8);
+    transition: all 0.2s linear;
 }
 
 header nav .nav-link {
@@ -148,10 +149,6 @@ header nav h2{
     margin: 0;
     padding-top: 5px;
     transition: all 400ms ease;
-}
-
-header nav h2:hover{
-    font-size: 2.5rem;
 }
 
 header .navbar-expand-lg .navbar-nav .nav-link{
@@ -231,7 +228,6 @@ header .navbar-expand-lg .navbar-nav .nav-link{
 }
 
 .home-section i{
-    color: #0e49b5;
     padding-right: 10px;
 }
 
@@ -244,7 +240,7 @@ header .navbar-expand-lg .navbar-nav .nav-link{
 /* about section */
 
 .about-section{
-    position: relative;
+    margin-top: 150px;
 }
 
 .about-section h1{
@@ -266,7 +262,6 @@ header .navbar-expand-lg .navbar-nav .nav-link{
 }
 
 .about-section i{
-    color: #0e49b5;
     padding-right: 10px;
 }
 
@@ -293,13 +288,18 @@ header .navbar-expand-lg .navbar-nav .nav-link{
 
 /* consider section */
 
+.consider-section{
+    margin-top: 150px;
+}
+
 .consider-section h1{
+    font-size: 4rem;
     font-weight: bold;
 }
 
 .consider-section .consider-card{
     /* background-color: rgba(0, 0, 0, 0.5); */
-    background-color: #fff;
+    background-color: #eeeeee;
     /* box-shadow: 5px 15px #ddd; */
     box-shadow: 5px 10px 10px #ddd;
     border-radius: 10px;
